@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadow Platformer – Development Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+    }
+    h2 {
+      color: #444;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shadow Platformer – Game Development Blog</h1>
+    <p>By Joseph Edeh | University of Portsmouth</p>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>1. Behind the Scenes</h2>
+      <p>
+        The development of <strong>Shadow Platformer</strong> began as a personal challenge to recreate the nostalgic experience of classic Mario-style games using Unreal Engine. My aim was to create a basic but fully playable platformer game with features like jumping, enemy interaction, and coin collection — while improving my skills in visual scripting and level design.
+      </p>
+      <p>
+        I used Unreal Engine 5, relying mainly on Blueprints for logic and controls. I began by designing the player movement system: horizontal movement, gravity-based jumping, and collision with platforms. After that, I added interactive elements like coins, power-ups, and simple enemies that patrol specific areas.
+      </p>
+      <p>
+        Over the course of three weeks, I invested roughly 20–25 hours into learning, building, and testing. I followed tutorials, experimented independently, and referred to the Unreal community for debugging help. All assets were sourced from free or royalty-free platforms, with a few minor sprite modifications to personalize the look.
+      </p>
+      <p>
+        The feedback I received from classmates and lecturers was encouraging. They highlighted the polish of the movement system and the game’s responsiveness. Their suggestions, such as adding background music or fine-tuning enemy timing, helped me refine the final build.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Outcome</h2>
+      <p>
+        The final result was a fully playable prototype of a 2D side-scrolling platformer titled <strong>Shadow Platformer</strong>. Key features include:
+      </p>
+      <ul>
+        <li>Character Control: Smooth left/right movement, jump mechanics, and ground collision.</li>
+        <li>Level Design: A complete level with platforms, gaps, spikes, coins, and a finish goal.</li>
+        <li>Enemies: Simple patrol logic using Blueprints; enemies damage the player on contact.</li>
+        <li>UI: On-screen coin counter, health bar, and start/restart menus.</li>
+        <li>Sound: Background music and sound effects for jumping, collecting, and enemy contact.</li>
+        <li>Exportable Build: Game can be packaged and played as a standalone .exe file for Windows.</li>
+      </ul>
+      <p>
+        The game successfully demonstrates the core experience I set out to build — fast-paced platforming with clear feedback and consistent logic. I also created promotional assets, including gameplay clips and screenshots, which I plan to use on my portfolio and social platforms.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. Reflection</h2>
+      <p>
+        Working on <strong>Shadow Platformer</strong> deepened my understanding of Unreal Engine and game design in general. Even though it appears simple, building a platformer required attention to timing, hitboxes, animation syncing, and state management.
+      </p>
+      <p><strong>What worked well:</strong>  
+        The use of Blueprints allowed me to iterate quickly and visualize logic flows. My movement system felt responsive, and collision behavior was solid. I was also pleased with the simple enemy AI and how it added life to the level.
+      </p>
+      <p><strong>What didn’t work initially:</strong>  
+        Early in development, jump physics felt floaty and inconsistent. I also struggled with layering the background and tiles correctly, which caused visual glitches. Enemy logic also failed at times, with pathing bugs and overlap events triggering at the wrong times.
+<section>
+  <h2>🛠️ Challenges Faced During Development</h2>
+  <p>One of the main bugs I encountered was the player character falling off the map. This usually happened due to missing collisions or gaps between platforms.</p>
+  <p>I attempted to fix it by:</p>
+  <ul>
+    <li>Adding invisible boundary walls or kill zones to respawn the player.</li>
+    <li>Improving collision detection on platforms.</li>
+    <li>Adjusting gravity and jump strength in the Blueprint settings.</li>
+  </ul>
+  <p>This helped me better understand how Unreal Engine handles physics and level design, and improved my problem-solving skills.</p>
+</section>
+
+      </p>
+      <p><strong>How I overcame challenges:</strong>  
+        I revisited the Blueprint logic and broke it into smaller, testable parts. I also learned about collision channels and began using debug visuals to identify problem areas. Through iteration, community feedback, and self-testing, I improved performance and game flow.
+      </p>
+      <p>
+        This project taught me the importance of <strong>modular design</strong>, <strong>clear logic</strong>, and <strong>playtesting</strong>. It also boosted my confidence in using Unreal Engine for 2D game development. In the future, I aim to explore more advanced systems like health regeneration, multiple levels, and even simple boss fights — potentially expanding the project or starting a new one in Unity or Godot for comparison.
+      </p>
+    </div>
+  </div>
+<div class="section">
+  <h2>🎥 Behind the Scenes</h2>
+
+  <h3>Game Development – Part 1</h3>
+  <video width="100%" controls>
+    <source src="making_part1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h3>Game Development – Part 2</h3>
+  <video width="100%" controls>
+    <source src="making_part2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="section">
+  <h2>🎮 Gameplay Demo</h2>
+  <video width="100%" controls>
+    <source src="gameplay.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>This video shows the full gameplay loop of Shadow Platformer.</p>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Joseph Edeh | University of Portsmouth</p>
+  </footer>
+</body>
+</html>
